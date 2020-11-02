@@ -8,9 +8,9 @@
         <version>2.3.5.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.overmind</groupId>
+
     <artifactId>logging-spring-boot-starter</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.4-SNAPSHOT</version>
     <name>logging-spring-boot-starter</name>
     <description>logging-spring-boot-starter</description>
 
