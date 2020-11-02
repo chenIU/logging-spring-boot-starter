@@ -28,9 +28,9 @@ public class TimeLogAutoConfiguration {
     public Object around(ProceedingJoinPoint pjp) throws Throwable {
         String method = pjp.getSignature().toLongString().split(" ")[2];
         long start = System.currentTimeMillis();
-        Object resut = pjp.proceed();
+        Object result = pjp.proceed();
         long end = System.currentTimeMillis();
-        logger.info("方法{},执行耗时{} ms"+method,end - start);
-        return resut;
+        logger.info("方法{},执行耗时{} ms",method,end - start);
+        return result;
     }
 }
