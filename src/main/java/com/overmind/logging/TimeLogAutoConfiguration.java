@@ -5,6 +5,7 @@ import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.slf4j.Logger;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.stereotype.Component;
 
@@ -15,7 +16,7 @@ import static org.slf4j.LoggerFactory.getLogger;
  * @author: chenjy
  * @create: 2020-11-02 08:51
  */
-@Component
+@Configuration
 @Aspect
 @EnableAspectJAutoProxy
 @ConditionalOnProperty(prefix = "time.log",name = "enable",havingValue = "true",matchIfMissing = true)
